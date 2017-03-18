@@ -142,7 +142,7 @@ Network request for String
     */
     public void makeNetworkRequestForJSONArray(final int requestCode, int method, String url, JSONArray param, final Map<String, String> headers, final NetworkResponseListener listener){
         Log.d(TAG ,"loading url "+url);
-        JsonArrayRequest request = new JsonArrayRequest(
+        JsonArrayRequest request = new CustomJsonArrayRequest(
                 method, url, param,
                 new Response.Listener<JSONArray>() {
                     @Override
